@@ -1,34 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import { Testimonio } from './components/Testimonio';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className='app'>
+      <div className="contenedorPrincipal">
+        <h1>
+          Esto es lo que dicen nuestros alumnos sobre freeCodeCamp:
+        </h1>
+        <Testimonio
+          nombre='Shaw Wang'
+          pais='Singapur'
+          imagen={'shaw'}
+          cargo='Ingeniero de software'
+          empresa='Amazon'
+          testimonio='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ante et massa bibendum condimentum. Aliquam dolor est, faucibus ac erat id, vestibulum interdum mi. Curabitur dignissim nisl non massa venenatis hendrerit. Quisque neque nunc, condimentum id rutrum sed, feugiat nec nunc. Cras in mauris fermentum, tempus nisl id, blandit sapien. Cras eget nunc eget orci malesuada maximus.'
+        />
+        <Testimonio
+          nombre='Emma Bostian'
+          pais='Suecia'
+          imagen={'emma'}
+          cargo='Ingeniero de software'
+          empresa='Spotify'
+          testimonio='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ante et massa bibendum condimentum. Aliquam dolor est, faucibus ac erat id, vestibulum interdum mi. Curabitur dignissim nisl non massa venenatis hendrerit. Quisque neque nunc, condimentum id rutrum sed, feugiat nec nunc. Cras in mauris fermentum, tempus nisl id, blandit sapien. Cras eget nunc eget orci malesuada maximus.'
+        />
+        <Testimonio
+          nombre='Sara Chima'
+          pais='Nigeria'
+          imagen={'sara'}
+          cargo='Ingeniero de software'
+          empresa='ChatDesk'
+          testimonio='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin ante et massa bibendum condimentum. Aliquam dolor est, faucibus ac erat id, vestibulum interdum mi. Curabitur dignissim nisl non massa venenatis hendrerit. Quisque neque nunc, condimentum id rutrum sed, feugiat nec nunc. Cras in mauris fermentum, tempus nisl id, blandit sapien. Cras eget nunc eget orci malesuada maximus.'
+        />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 
