@@ -1,24 +1,28 @@
 import React from 'react'
 import '../css/testimonio.css'
 
-export function Testimonio(props){
-	const imagen = `../images/testimonio-${props.imagen}.png`;
+export function Testimonio(props) {
+	const { testimonio } = props;
 	return (
-		<div className='contenedorTestimonio'>
-			<img 
-				className='imagenTestimonio'
-				src={`../images/testimonio-${props.imagen}.png`}
-				alt={props.nombre}
-			/>
-			<div className="contenedorTextoTestimonio">
-				<p className='nombreTestinomonio'>
-
-				</p>
-				<p className='nombreTestinomonio'>
-					<strong>{props.nombre}</strong> en {props.pais}</p>
-				<p className='cargoTestinomonio'>{props.cargo} en <strong>{props.empresa}</strong></p>
-				<p className='textoTestinomonio'>"{props.testimonio}"</p>
+		testimonio.map((data, index) => (
+			<div key={index} className='contenedorTestimonio'>
+				{
+					<>
+						<img
+							className='imagenTestimonio'
+							src={'../images/testimonio-' + data.imagen + '.png'}
+							alt={data.nombre}
+						/>
+						<div className="contenedorTextoTestimonio">
+							<p className='nombreTestinomonio'>{data.nombre} en {data.pais}</p>
+							<p className='cargoTestinomonio'>{data.cargo}</p>
+							<p className='textoTestinomonio'>
+								{data.testimonio}
+							</p>
+						</div>
+					</>
+				}
 			</div>
-		</div>
+		))
 	);
 }
