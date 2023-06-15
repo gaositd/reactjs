@@ -1,4 +1,5 @@
 import React from "react";
+import '../css/boton.css';
 
 export const Boton = (props) =>{
 
@@ -6,10 +7,11 @@ export const Boton = (props) =>{
     return isNaN(valor) && (valor !== '.') &&( valor !== '=');
   };
 
-
-
   return(
-    <div className={`botonContenedor ${esOperador(props.children) ? 'operador' : null}`}>
+    <div 
+      className={`botonContenedor 
+      ${esOperador(props.children) ? 'operador' : ''}`.trimEnd()}
+    >
       {props.children}
     </div>
   );
