@@ -17,7 +17,7 @@ function App() {
   console.log(simbolos);
   };
   const agregarInput = (newValue) => {
-    revisaCaracteres(input);
+    //revisaCaracteres(input);
     setInput(input + newValue)
   };
   const calcularResultado = () => {
