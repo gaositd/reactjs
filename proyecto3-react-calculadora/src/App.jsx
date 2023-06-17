@@ -9,9 +9,18 @@ import { evaluate} from 'mathjs';
 function App() {
   const [input, setInput] = useState('');
 
-  const agregarInput = (newValue) => setInput(input + newValue);
+  const revisaCaracteres = (value) =>{
+  const regex = /[+-*/]/;
+  const simbolos = value.
+                        split(regex).
+                        filter(simbolo => simbolos.length > 0);
+  console.log(simbolos);
+  };
+  const agregarInput = (newValue) => {
+    revisaCaracteres(input);
+    setInput(input + newValue)
+  };
   const calcularResultado = () => {
-    //evaluar division por cero
     if (typeof(input) !== 'number'){
       input === ''
         ? ''
