@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Open Sans";
+  src: url('./fonts/RobotoMono-Medium.ttf') format('Roboto'),
+    url('./fonts/RobotoMono-Medium.ttf') format('Roboto');
+  font-weight: bold;
+  font-display: swap;
+}
+
 html,
 body {
   color: white;
