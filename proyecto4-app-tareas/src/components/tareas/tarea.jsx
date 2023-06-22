@@ -2,7 +2,13 @@ import React from 'react';
 import { VscError } from 'react-icons/vsc';
 
 export const Tarea = (props) => {
-  const { texto, completada } = props;
+  const { 
+      id,
+      texto, 
+      completada,
+      completarTarea,
+      eliminarTarea,
+    } = props;
 
   return (
     <div className={
@@ -11,10 +17,16 @@ export const Tarea = (props) => {
           : 'tareaContenedor'
         }
       >
-      <div className='tareaTexto'>
+      <div 
+        className='tareaTexto'
+        onClick={() =>completarTarea(id)}
+      >
         {texto}
       </div>
-      <div className='tareaContenedorIconos'>
+      <div 
+        className='tareaContenedorIconos'
+        onClick={() => eliminarTarea(id)}
+      >
         <VscError 
           className='tareaIcono'
         />
