@@ -11,6 +11,8 @@ export const Tarea = (props) => {
     } = props;
 
   return (
+    <>
+    console.log(props)
     <div className={
         completada 
           ? 'tareaContenedor completada' 
@@ -21,7 +23,7 @@ export const Tarea = (props) => {
         className='tareaTexto'
         onClick={() =>completarTarea(id)}
       >
-        {texto}
+        {console.log(props)}
       </div>
       <div 
         className='tareaContenedorIconos'
@@ -32,5 +34,6 @@ export const Tarea = (props) => {
         />
       </div>
     </div>
+    </>
   )
 }

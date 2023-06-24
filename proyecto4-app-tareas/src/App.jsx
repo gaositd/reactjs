@@ -13,7 +13,7 @@ function App() {
       <div className="tareasListaPrincipal">
         <h1>Mis tareas</h1>
         <ListaDeTareas />
-        6:40:00
+        7:11:58
       </div>
     </div>
   )
