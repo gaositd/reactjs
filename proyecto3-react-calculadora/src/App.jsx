@@ -14,7 +14,6 @@ function App() {
   const simbolos = value.
                         split(regex).
                         filter(simbolo => simbolos.length > 0);
-  console.log(simbolos);
   };
   const agregarInput = (newValue) => {
     //revisaCaracteres(input);
