@@ -1,4 +1,3 @@
-import React from 'react';
 import { VscError } from 'react-icons/vsc';
 
 export const Tarea = (props) => {
@@ -12,7 +11,7 @@ export const Tarea = (props) => {
 
   return (
     <>
-    console.log(props)
+    {console.log("props" + props)}
     <div className={
         completada 
           ? 'tareaContenedor completada' 
@@ -21,9 +20,9 @@ export const Tarea = (props) => {
       >
       <div 
         className='tareaTexto'
-        onClick={() =>completarTarea(id)}
+        onClick={() => completarTarea(id)}
       >
-        {console.log(props)}
+        {texto}
       </div>
       <div 
         className='tareaContenedorIconos'

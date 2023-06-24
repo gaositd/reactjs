@@ -1,6 +1,6 @@
-import React, {Fragment, useState} from 'react';
+import {Fragment, useState} from 'react';
 import { TareaFormulario } from '../formulario/TareaFormulario';
-import { Tarea } from '../tareas/tarea';
+import { Tarea } from './tarea';
 import '../../styles/ListaDeTareas.css';
 
 export const ListaDeTareas = () => {
@@ -40,7 +40,11 @@ export const ListaDeTareas = () => {
       />
       <div className="tareasListaContenedor">
         {
-          tareas.map((item) => {
+          tareas.map( (item) => {
+            <>
+            {
+              console.log("item",item)
+            }
             <Tarea 
               key={item.id}
               id={item.id}
@@ -49,6 +53,7 @@ export const ListaDeTareas = () => {
               eliminarTarea={eliminarTarea}
               completarTarea={completarTarea}
             />
+            </>
           })
         }
       </div>
