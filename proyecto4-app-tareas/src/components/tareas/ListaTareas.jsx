@@ -10,8 +10,9 @@ export const ListaDeTareas = () => {
     
     if(tarea.texto.trim()){
       tarea.texto = tarea.texto.trim();
-      const tareasActualizadas = [ tarea, ...tareas ];
-      setTareas(tareasActualizadas);
+      // const tareasActualizadas = [ tarea, ...tareas ];
+      // setTareas(tareasActualizadas);
+      setTareas([ tarea, ...tareas ]);
     }
 
   };
