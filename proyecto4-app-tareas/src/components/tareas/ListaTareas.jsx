@@ -26,6 +26,7 @@ export const ListaDeTareas = () => {
     const tareasActualizadas = tareas.map(tarea =>{
       if(tarea.id === id){
         tarea.completarTarea = !tarea.completada;
+        tarea.completada = !tarea.completada;
       }
       return tarea;
     });
