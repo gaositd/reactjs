@@ -34,7 +34,8 @@
   align-items: center;
 }
 
-.tareaContenedor.completada{
+.tareaContenedor
+.completada{
   background-color: #5a01a7;
   text-decoration: line-through;
 }

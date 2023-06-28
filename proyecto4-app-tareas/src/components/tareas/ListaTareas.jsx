@@ -41,8 +41,7 @@ export const ListaDeTareas = () => {
       />
       <div className="tareasListaContenedor">
         {
-          tareas.map( (item) => {
-            <>
+          tareas.map( item => (
             <Tarea 
               key={item.id}
               id={item.id}
@@ -51,8 +50,7 @@ export const ListaDeTareas = () => {
               eliminarTarea={eliminarTarea}
               completarTarea={completarTarea}
             />
-            </>
-          })
+          ))
         }
       </div>
     </Fragment>
