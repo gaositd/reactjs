@@ -11,7 +11,6 @@ export const Tarea = (props) => {
 
   return (
     <>
-    {console.log("props" + props)}
     <div className='tareaContenedor'
       >
       <div 

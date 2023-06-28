@@ -43,9 +43,6 @@ export const ListaDeTareas = () => {
         {
           tareas.map( (item) => {
             <>
-            {
-              console.log("item",item)
-            }
             <Tarea 
               key={item.id}
               id={item.id}
