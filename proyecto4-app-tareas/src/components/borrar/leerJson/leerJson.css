@@ -1,0 +1,31 @@
+
+
+.lista{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+p{
+  margin-right: 4%;
+}
+
+.direccionPaginacion{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+p,
+.direccionPaginacion{
+  margin: 5px;
+  cursor: pointer;
+}
+
+.botonPaginacion{
+  background-color: rgb(155, 165, 165);
+  width: 100px;
+  font-size: 20px;
+  cursor: pointer;
+}
