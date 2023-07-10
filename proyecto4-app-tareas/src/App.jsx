@@ -10,6 +10,7 @@ import { Formulario } from './components/borrar/fomulario/formulario';
 import { LeerJson } from './components/borrar/leerJson/leerJson';
 
 import {Logo} from './components/logo/Logo';
+import { GirarTarjeta } from './components/borrar/girarTarjeta/girarTarjeta';
 
 function App() {
 
@@ -22,8 +23,9 @@ function App() {
         {/* <Test />
         <BotonCliqueado /> 
         <Ul />
-        <Formulario />*/}
-        <LeerJson />
+        <Formulario />
+         <LeerJson /> */}
+        <GirarTarjeta />
       </div>
     </div>
   )

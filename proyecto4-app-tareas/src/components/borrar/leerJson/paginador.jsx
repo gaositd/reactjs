@@ -4,12 +4,12 @@ import { SeeAlbum } from './seeAlbum';
 import './leerJson.css';
 
 export const Paginador = (props) => {
-  const { albumJsonIDArray } = props;
+  const { albumJsonIDArray, closeArr } = props;
   const [block, setBlock] = useState(0);
   const [currentPage, setCurrentPage] = useState(0);
+  const [albumId, setAlbumId] = useState(0);
   const [arrPhotos, setArrPhotos] = useState([]);
   const maxPages = 10;
-  let albumId = 0;
 
   useEffect(() => nextBlock, []);
 
@@ -17,7 +17,7 @@ export const Paginador = (props) => {
     currentPage === albumJsonIDArray.length
       ? setCurrentPage(0)
       :null;
-
+    console.log(currentPage);
     if (currentPage < albumJsonIDArray.length) {
       const newArrPhotos = [];
       for (let i = currentPage; i < maxPages + currentPage; i++) {
@@ -35,29 +35,24 @@ export const Paginador = (props) => {
   };
 
   const prevBlock = (block) => {
-    currentPage === 0
-      ? setCurrentPage(10)
-      :null;
+    const currentBlock = ( block -1 ) * 10;
+    const newArrPhotos = [];
 
-    if (currentPage < albumJsonIDArray.length) {
-      const newArrPhotos = [];
-      for (let i = currentPage - maxPages; i < currentPage; i++) {
-        newArrPhotos.push(albumJsonIDArray[i]);
-      }
-      setCurrentPage(currentPage - maxPages);
-      setArrPhotos(newArrPhotos);
-      setBlock(block - 1);
-    } else {
-      if(albumJsonIDArray.length < 0){
-        setCurrentPage(0);
-        prevBlock(block);
-      }
+    // if(block === 0){
+
+    // }
+
+    for(let i = currentBlock; i < (block * 10); i++){
+      newArrPhotos.push(albumJsonIDArray[i]);
     }
+    setCurrentPage(currentPage - maxPages);
+    setArrPhotos(newArrPhotos);
+    setBlock(block -1);
+
   };
 
   const verPhoto = (lista) =>{
-    albumId = lista;
-    alert(albumId);
+    setAlbumId(lista);
   };
 
   return (
@@ -67,7 +62,7 @@ export const Paginador = (props) => {
         <button 
           className='botonPaginacion'
           onClick={() => prevBlock(block)}
-          >
+        >
           👈🔙
         </button>
         {
@@ -87,10 +82,10 @@ export const Paginador = (props) => {
           👉🔜
         </button> 
         </div>
-        <div>
+        <div className='seeMiniPhotos'>
           <SeeAlbum 
             albumId={albumId}
-            albumJsonIDArray={albumJsonIDArray}
+            closeArr={closeArr}
           />
         </div>
       </div>

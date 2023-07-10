@@ -8,18 +8,21 @@ import { createBrowserRouter } from 'react-router-dom';
 
 export const LeerJson = () => {
   const [albumJsonIDArray, setAlbumJsonIDArray] = useState([]);
+  const [closeArr, setCloseArr] = useState(true);
 
   useEffect(() =>{},[albumJsonIDArray]);
 
   const getAlbumId = () => {
+    setCloseArr(true);
     const arrayTemp = AlbumJson.map((album) => album.albumId);
     const uniqueIds = [...new Set(arrayTemp)];
     setAlbumJsonIDArray(uniqueIds);
   };
 
   const closeAlbumId = () =>{
-    setAlbumJsonIDArray([]);
-    return albumJsonIDArray;
+    // setAlbumJsonIDArray([]);
+    // console.log(albumJsonIDArray);
+    setCloseArr(false);
   }
 
   return (
@@ -35,7 +38,12 @@ export const LeerJson = () => {
       </div>
       <div className='direccionPaginacion'>
         <Paginador 
-          albumJsonIDArray = {albumJsonIDArray}
+          albumJsonIDArray = {
+            albumJsonIDArray.length !== 0
+              ? albumJsonIDArray
+              : []
+          }
+          closeArr={closeArr}
         />
       </div>
     </div>

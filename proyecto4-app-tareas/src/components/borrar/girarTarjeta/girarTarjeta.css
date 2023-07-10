@@ -1,0 +1,44 @@
+.cartas{
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.carta-box {
+  margin: 5px;
+  width: 100px;
+  height: 150px;
+}
+
+.carta-box:hover .carta {
+    transform: rotateY(180deg);
+}
+
+.carta {
+  transform-style: preserve-3d;
+  transition: all 0.5s linear;
+}
+
+.cara {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.cara.detras {
+  transform: rotateY(180deg);
+}
+
+.centrarBoton{
+  display: grid;
+}
+
+.botonAleatorio{
+  background-color: rgb(58, 56, 56);
+  color: #fff;
+  font-size: 1.0rem;
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif;
+  padding: 1%;
+  border-radius: 10px;
+}
