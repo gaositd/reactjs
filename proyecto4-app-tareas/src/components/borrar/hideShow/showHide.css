@@ -1,0 +1,38 @@
+.contenedorShowHide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.paragraph{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+}
+
+.boton{
+  width: 18rem;
+  margin: 1% 0;
+  background-color: rgb(95, 81, 63);
+  height: 1.6rem;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.columnas{
+  display: flex;
+  flex-direction: column;
+}
+
+.showHidePass{
+  height: 3vh;
+  background-color: rgb(243, 229, 212);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
