@@ -11,6 +11,7 @@ import { LeerJson } from './components/borrar/leerJson/leerJson';
 
 import {Logo} from './components/logo/Logo';
 import { GirarTarjeta } from './components/borrar/girarTarjeta/girarTarjeta';
+import { TextAnalizer } from './components/borrar/textAnalizer/textAnalizer';
 
 function App() {
 
@@ -24,8 +25,9 @@ function App() {
         <BotonCliqueado /> 
         <Ul />
         <Formulario />
-         <LeerJson /> */}
-        <GirarTarjeta />
+         <LeerJson />
+        <GirarTarjeta /> */}
+        <TextAnalizer />
       </div>
     </div>
   )
