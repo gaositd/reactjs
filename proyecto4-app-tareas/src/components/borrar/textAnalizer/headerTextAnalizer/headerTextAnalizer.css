@@ -1,5 +1,9 @@
-.container{
+.containerHeader{
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 35% 35% 30%;
   color: #000;
+  font-weight: bold;
+}
+ .containerHeader > div{
+  margin: 10px 0;
 }

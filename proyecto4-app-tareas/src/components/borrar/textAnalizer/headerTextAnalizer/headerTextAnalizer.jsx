@@ -3,7 +3,7 @@ import './headerTextAnalizer.css'
 
 const HeaderTextAnalizer = () => {
   return (
-    <div className='container'>
+    <div className='containerHeader'>
       <div>Palabras:</div>
       <div>Caracteres:</div>
       <div>Renglones:</div>

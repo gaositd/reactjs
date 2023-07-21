@@ -1,7 +1,7 @@
 import React from 'react'
-import HeaderTextAnalizer from './headerTextAnalizer/headerTextAnalizer'
-import { MainTextanalizer } from './mainTextanalizer'
-import { FooterTextAnalizer } from './footerTextAnalizer'
+import HeaderTextAnalizer from './headerTextAnalizer/headerTextAnalizer';
+import { MainTextanalizer } from './mainTextanalizer/mainTextanalizer';
+import { FooterTextAnalizer } from './footerTextAnalizer/footerTextAnalizer';
 
 export const TextAnalizer = () => {
   return (

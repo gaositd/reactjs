@@ -1,0 +1,12 @@
+.footerTextArea{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.parrafo{
+  margin: 1rem 0  0 1rem;
+  color: black;
+  text-align: justify;
+  font-weight: bold;
+}
