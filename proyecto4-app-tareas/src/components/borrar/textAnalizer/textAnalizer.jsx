@@ -6,7 +6,7 @@ import { FooterTextAnalizer } from './footerTextAnalizer/footerTextAnalizer';
 export const TextAnalizer = () => {
   return (
     <div>
-      <HeaderTextAnalizer />
+      {/* <HeaderTextAnalizer /> */}
       <MainTextanalizer />
       <FooterTextAnalizer />
     </div>

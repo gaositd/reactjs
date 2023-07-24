@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { SeeAlbum } from './seeAlbum';
 import './leerJson.css';
 
@@ -37,10 +36,6 @@ export const Paginador = (props) => {
   const prevBlock = (block) => {
     const currentBlock = ( block -1 ) * 10;
     const newArrPhotos = [];
-
-    // if(block === 0){
-
-    // }
 
     for(let i = currentBlock; i < (block * 10); i++){
       newArrPhotos.push(albumJsonIDArray[i]);
