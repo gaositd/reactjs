@@ -13,6 +13,7 @@ import {Logo} from './components/logo/Logo';
 import { GirarTarjeta } from './components/borrar/girarTarjeta/girarTarjeta';
 import { HideShow } from './components/borrar/hideShow/hideShow';
 import { TextAnalizer } from './components/borrar/textAnalizer/textAnalizer';
+import { Quote } from './components/borrar/quote/quote';
 
 function App() {
 
@@ -30,8 +31,9 @@ function App() {
         <GirarTarjeta />
         <HideShow />
          <LeerJson />
-        <GirarTarjeta /> */}
-        <TextAnalizer />
+        <GirarTarjeta /> 
+        <TextAnalizer />*/}
+        <Quote />
       </div>
     </div>
   )
