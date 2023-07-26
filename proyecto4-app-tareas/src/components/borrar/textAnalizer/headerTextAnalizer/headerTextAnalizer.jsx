@@ -1,28 +1,27 @@
-import { useState, useEffect } from 'react'
-import './headerTextAnalizer.css'
+import './headerTextAnalizer.css';
 
 const HeaderTextAnalizer = (props) => {
-  const [counter, setCounter] = useState(0);
-  const { character, counterCharacter } = props;
-
-
-    // useEffect(() => counterCharacter, []);
-    // console.log("counterCharacter" + counterCharacter);
+  const { 
+    character, 
+    counterCharacter,
+    counterRows,
+    counterWords,
+    counterParagraph,
+    counterSpaces,
+    counterPronouns,
+   } = props.data;
+  const lastCharacter = character.slice(-1);  
+  
   return (
-    // <div className='containerHeader'>
-    //   <div>Total Palabras: {character}</div>
-    //   <div>Total Caracteres: {counterCharacter}</div>
-    //   <div>Total Renglones:</div>
-    //   <div>Total Párrafos:</div>
-    //   <div>Total Pronombres:</div>
-    //   <div>Total Espacios:</div>
-    // </div>
-    <>
-      {
-        props.character
-      }
-    </>
-  )
-}
+    <div className='containerHeader'>
+      <div>Total Palabras: {counterWords}</div>
+      <div>Total Caracteres: {counterCharacter}</div>
+      <div>Total Renglones: {counterRows}</div>
+      <div>Total Párrafos: {counterParagraph}</div>
+      <div>Total Pronombres: {counterPronouns}</div>
+      <div>Total Espacios: {counterSpaces}</div>
+    </div>
+  );
+};
 
-export default HeaderTextAnalizer
+export default HeaderTextAnalizer;
