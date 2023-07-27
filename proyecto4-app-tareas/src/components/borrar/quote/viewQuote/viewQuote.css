@@ -1,0 +1,54 @@
+.container{
+  height:20vh;
+  display: grid;
+  grid-template-rows: 50% 10% 30%;
+
+}
+
+.textFormatQuote{
+  color:black;
+  font-size: 2rem;
+  margin: 0.5rem 0 0.5rem 1.7rem;
+  text-decoration: underline;
+}
+
+.textFormatAuthor{
+  color:rgb(68, 64, 64);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  font-style: italic;
+  margin: 0.5rem 0 0.5rem 1.7rem;
+  text-decoration: wavy;
+}
+
+.buttons{
+  display: flex;
+}
+
+.botonQuote{
+  width: 45%;
+  margin: 2.5em;
+  padding: 1%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color:#fff;
+  background-color: rgb(97, 109, 109);
+  cursor: pointer;
+}
+
+.botonQuote_hover{
+  width: auto;
+  margin: 2.5em;
+  padding: 1%;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color:#fff;
+  background-color: rgb(54, 59, 59);
+  cursor: pointer;
+}
