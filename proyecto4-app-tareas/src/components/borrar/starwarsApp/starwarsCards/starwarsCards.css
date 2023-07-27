@@ -1,8 +1,9 @@
 .starwarsCards{
-  width: 70vw;
-  height: 65vh;
   display: grid;
   grid-template-columns: 18% 18% 18% 18% 18%;
+  justify-content: center;
+  width: 70vw;
+  height: 65vh;
   background-color: #c9c9c9;
   border-radius: 10px;
   padding: 5px;
