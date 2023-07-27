@@ -14,16 +14,17 @@ import { GirarTarjeta } from './components/borrar/girarTarjeta/girarTarjeta';
 import { HideShow } from './components/borrar/hideShow/hideShow';
 import { TextAnalizer } from './components/borrar/textAnalizer/textAnalizer';
 import { Quote } from './components/borrar/quote/quote';
+import { StarwarsApp } from './components/borrar/starwarsApp/starwarsApp';
 
 function App() {
 
   return (
     <div className='aplicacionTareas'>
       <Logo />
-      <div className="tareasListaPrincipal">
+      {/*<div className="tareasListaPrincipal">
         <h1>Mis tareas</h1>
         <ListaDeTareas />
-        {/* <Test />
+         <Test />
         <BotonCliqueado /> 
         <Ul />
         <Formulario />
@@ -32,9 +33,10 @@ function App() {
         <HideShow />
          <LeerJson />
         <GirarTarjeta /> 
-        <TextAnalizer />*/}
+        <TextAnalizer />
         <Quote />
-      </div>
+      </div>*/}
+      <StarwarsApp />
     </div>
   )
 }

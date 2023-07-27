@@ -1,0 +1,9 @@
+.starwarsTitle{
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: wavy;
+  font-style: oblique;
+  margin: 0.5rem;
+}
