@@ -1,7 +1,10 @@
-import React from 'react';
+import { useState } from 'react';
 import './starwarsPagination.css';
 
-export const StarwarsPagination = () => {
+export const StarwarsPagination = (props) => {
+  const [pagination, setPagination] = useState(false);
+  const {prevPage, nextpage} = props;
+
   return (
     <div className='pagingButtonsDiv'>
       <div className='pagingButton'>

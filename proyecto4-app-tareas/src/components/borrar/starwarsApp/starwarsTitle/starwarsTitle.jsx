@@ -3,6 +3,6 @@ import './starwarsTitle.css';
 
 export const StarwarsTitle = () => {
   return (
-    <span className='starwarsTitle'>Starwars Characters</span>
+    <span className='starwarsTitle'>Star Wars Characters</span>
   )
 }

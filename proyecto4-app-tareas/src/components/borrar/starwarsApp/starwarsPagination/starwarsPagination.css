@@ -22,9 +22,9 @@
 }
 
 .link:hover{
-  color: rgb(197, 195, 195);
+  color: rgba(197, 195, 195. 0.9);
 }
 
 .linkNull{
-  color:gray;
+  color:#615C58;
 }
