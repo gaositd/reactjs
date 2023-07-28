@@ -1,7 +1,7 @@
 import { useState } from'react';
 import HeaderTextAnalizer from'../headerTextAnalizer/headerTextAnalizer';
 
-import'./mainTextAnalizer.css';
+import './mainTextanalizer.css';
 
 export const MainTextanalizer = () => {
   const [data, setData] = useState({
@@ -28,8 +28,7 @@ export const MainTextanalizer = () => {
       arrPronouns.includes(words[i].toLowerCase())
         ? counter ++
         : null
-    };
-
+    }
     return counter;
   };
 
@@ -44,12 +43,13 @@ export const MainTextanalizer = () => {
       value[i] === ("\n")
         ? counter ++
         : null
-    };
+    }
+
     return counter;
   };
   
   const handleChange = (e) => {
-    const { value, key } = e.target;
+    const { value } = e.target;
     
     spaces = value.split(' ').length - 1;//cuenta los espacios
     words = value.split(' ');            //cuenta palabras antes de espacios

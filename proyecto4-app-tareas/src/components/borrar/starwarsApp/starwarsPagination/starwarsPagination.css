@@ -1,0 +1,30 @@
+.pagingButtonsDiv{
+  display: grid;
+  /* grid-template-columns: 33% 33% 33%; */
+  grid-template-columns: repeat(3, 33%);
+  width: 100%;
+  margin-top: 1%;
+}
+
+.pagingButton{
+  padding-top: 1%;
+  height: 30px;
+  text-align: center;
+  background-color: #0D8AA6;
+  border-radius: 10px;
+  margin-left: 4%;
+  font-weight: bold;
+}
+
+.link{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.link:hover{
+  color: rgb(197, 195, 195);
+}
+
+.linkNull{
+  color:gray;
+}
