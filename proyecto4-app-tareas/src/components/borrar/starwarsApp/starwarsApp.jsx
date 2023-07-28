@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { StarwarsTitle } from './starwarsTitle/starwarsTitle';
 import { StarwarsCards } from './starwarsCards/starwarsCards';
 import { StarwarsPagination } from './starwarsPagination/starwarsPagination';
@@ -7,6 +7,7 @@ import { StarwarsPagination } from './starwarsPagination/starwarsPagination';
 import './starwarsTitle/starwarsTitle.css';
 
 export const StarwarsApp = () => {
+  const dispatch = useDispatch();
   const arrStarwars = useSelector(state => state.fullDataStarWars);
   const [starwarsData, setStarwarsdata] = useState({
     count:0,
@@ -22,7 +23,9 @@ export const StarwarsApp = () => {
     try{
       const resp = await fetch(urlApi);
       const data = await resp.json();
-      setStarwarsdata(data);
+      // setStarwarsdata(data);
+      // setStarwarsdata
+      dispatch(data);
       setLoading(false);//ya cargo los datos y permite pasar
     }catch (err){
       setStarwarsdata(err);

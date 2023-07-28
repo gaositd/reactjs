@@ -19,6 +19,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   // </React.StrictMode>,
 )
 /*
-https://redux.js.org/tutorials/quick-start
-ya esta funcionando el redux toolkit
+https://www. youtube.com/watch?v=fMiFnbufAP4 17:00
 */
