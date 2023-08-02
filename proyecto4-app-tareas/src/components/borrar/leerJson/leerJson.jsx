@@ -4,7 +4,7 @@ import "./boton.css";
 import './leerJson.css';
 import { Paginador } from "./paginador";
 
-import { createBrowserRouter } from 'react-router-dom';
+// import { createBrowserRouter } from 'react-router-dom';
 
 export const LeerJson = () => {
   const [albumJsonIDArray, setAlbumJsonIDArray] = useState([]);

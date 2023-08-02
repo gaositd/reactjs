@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { getStarwarsdata } from '../../../redux/starWarsDataSlice';
 import { StarwarsTitle } from './starwarsTitle/starwarsTitle';
 import { StarwarsCards } from './starwarsCards/starwarsCards';
 import { StarwarsPagination } from './starwarsPagination/starwarsPagination';
@@ -19,23 +20,24 @@ export const StarwarsApp = () => {
   const [error, setError] = useState(false);
   const urlApi = 'https://swapi.dev/api/people';//dirección de la api
 
-  const getStarWarsData = async () =>{//obtener datos de la api
-    try{
-      const resp = await fetch(urlApi);
-      const data = await resp.json();
-      // setStarwarsdata(data);
-      // setStarwarsdata
-      dispatch(data);
-      setLoading(false);//ya cargo los datos y permite pasar
-    }catch (err){
-      setStarwarsdata(err);
-      setError(true);
-      setLoading(false);
-    }
+  const fGetStarWarsData = () => {
+    // Obtener datos de la API usando promesas
+    fetch(urlApi)
+      .then(resp => resp.json())
+      .then(data => {
+        setStarwarsdata(data);
+        dispatch(getStarwarsdata(data));
+        setLoading(false);
+      })
+      .catch(err => {
+        console.log(err);
+        setError(true);
+        setLoading(false);
+      });
   };
 
   useEffect(() =>{//carga de datos la pimera vez
-    getStarWarsData();
+    fGetStarWarsData();
   },[]);
 
   return (//en caso de no encontrar datos marcará error
@@ -60,4 +62,4 @@ export const StarwarsApp = () => {
       }
     </>
   )
-}
+};

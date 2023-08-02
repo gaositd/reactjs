@@ -13,10 +13,10 @@ export const starWarsDataSlice = createSlice({
   reducers:{
     getStarwarsdata:(state, action) =>{
       const {count, previous, next, results } = action.payload;
-      count = payload.count;
-      previous = payload.previous;
-      next = payload.next;
-      results = payload.results;
+      state.count =   count;
+      state.previous = previous;
+      state.next = next;
+      state.results = results;
     }
     // ,
     // chageNameCharacter:(state, action) =>{
