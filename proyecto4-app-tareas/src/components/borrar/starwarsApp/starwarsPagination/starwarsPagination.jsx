@@ -3,39 +3,30 @@ import { useSelector } from 'react-redux';
 import './starwarsPagination.css';
 
 export const StarwarsPagination = () => {
-  const { next, previous } = useSelector((state) => state.getStarwarsData);
-
-  // const previous = useSelector((state) => state.previous);
-  // const [pagination, setPagination] = useState(false);
-  // const {prevPage, nextpage} = props;
-  console.log(next, previous);
+  const { next, previous }  = useSelector((state) => state.starWarsData);//estos datos salen del estore, concretamente del reducer
+  
   return (
     <div className='pagingButtonsDiv'>
+      {/* //este boton y el siguiente checan hacia donde va, es decir, si adelante o atras es null el boton esta apagado, si hay datos va hacia adelante o atas*/}
       <div className='pagingButton'>
-        {/* <span className=''link'Null'>Starwars Pagination previous</span> */}
+        {/* va hacia atras */}
         <span 
-          className=
-          {
-            previous
-              ? 'link'
-              :'linkNull'
-          }
+          className={ previous ? 'link' :'linkNull' }
+          title={previous ?  `${previous}` : null }
         >
           Starwars Pagination previous
         </span>
       </div>
+      {/* solo es usado para dividir en tres el area de botones */}
       <div></div>
       <div className='pagingButton'>
-        {/* <span className='link'>Starwars Pagination Next</span> */}
-        <span className=
-          {
-            next
-              ? 'link'
-              :'linkNull'
-          }
+        {/* va hacia adelante */}
+        <span
+          className= { next ? 'link' :'linkNull' } 
+          title={next ? next : null }
         >
-          Starwars Pagination Next
-        </span>
+           Starwars Pagination Next 
+         </span>
       </div>
     </div>
   )

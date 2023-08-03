@@ -67,7 +67,6 @@ export const MainTextanalizer = () => {
     });
   };
   
-  console.log(data.character);
   return (
     <div>
       <HeaderTextAnalizer data={data} />

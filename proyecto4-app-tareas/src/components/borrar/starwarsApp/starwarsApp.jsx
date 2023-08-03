@@ -9,7 +9,7 @@ import './starwarsTitle/starwarsTitle.css';
 
 export const StarwarsApp = () => {
   const dispatch = useDispatch();
-  const arrStarwars = useSelector(state => state.fullDataStarWars);
+  // const arrStarwars = useSelector(state => state.fullDataStarWars);
   const [starwarsData, setStarwarsdata] = useState({
     count:0,
     netx:null,

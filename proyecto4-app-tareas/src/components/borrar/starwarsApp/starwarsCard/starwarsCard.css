@@ -1,0 +1,7 @@
+.card{
+  opacity: 0.8;
+  background-color: rgb(87, 157, 218);
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+}
