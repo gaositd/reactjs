@@ -9,7 +9,6 @@ import './starwarsTitle/starwarsTitle.css';
 
 export const StarwarsApp = () => {
   const dispatch = useDispatch();
-  // const arrStarwars = useSelector(state => state.fullDataStarWars);
   const [starwarsData, setStarwarsdata] = useState({
     count:0,
     netx:null,
@@ -39,7 +38,7 @@ export const StarwarsApp = () => {
   useEffect(() =>{//carga de datos la pimera vez
     fGetStarWarsData();
   },[]);
-
+  console.log(starwarsData.results[0]);
   return (//en caso de no encontrar datos marcará error
     <>
       {//primero mostrará un mensaje indicando la carga
