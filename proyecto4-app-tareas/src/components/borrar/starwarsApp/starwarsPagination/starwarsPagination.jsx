@@ -5,14 +5,16 @@ import './starwarsPagination.css';
 export const StarwarsPagination = () => {
   const { next, previous }  = useSelector((state) => state.starWarsData);//estos datos salen del estore, concretamente del reducer
   
+  const Next = next ? next.split('=') : "";
+  const Previous = previous ? previous.split('=') : "";
   return (
     <div className='pagingButtonsDiv'>
       {/* //este boton y el siguiente checan hacia donde va, es decir, si adelante o atras es null el boton esta apagado, si hay datos va hacia adelante o atas*/}
       <div className='pagingButton'>
         {/* va hacia atras */}
         <span 
-          className={ previous ? 'link' :'linkNull' }
-          title={previous ?  `${previous}` : null }
+          className={ Previous[1] ? 'link' :'linkNull' }
+          title={Previous[1] ?  `${Previous[1]}` : null }
         >
           Starwars Pagination previous
         </span>
@@ -22,8 +24,8 @@ export const StarwarsPagination = () => {
       <div className='pagingButton'>
         {/* va hacia adelante */}
         <span
-          className= { next ? 'link' :'linkNull' } 
-          title={next ? next : null }
+          className= { Next[1] ? 'link' :'linkNull' } 
+          title={Next[1] ? Next[1] : null }
         >
            Starwars Pagination Next 
          </span>

@@ -29,7 +29,7 @@ export const StarwarsApp = () => {
         setLoading(false);
       })
       .catch(err => {
-        console.log(err);
+        console.error(err);
         setError(true);
         setLoading(false);
       });
@@ -38,7 +38,7 @@ export const StarwarsApp = () => {
   useEffect(() =>{//carga de datos la pimera vez
     fGetStarWarsData();
   },[]);
-  console.log(starwarsData.results[0]);
+  
   return (//en caso de no encontrar datos marcará error
     <>
       {//primero mostrará un mensaje indicando la carga

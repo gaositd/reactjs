@@ -14,13 +14,14 @@
 }
 
 .imageCard{
-  width: 100vw;
-  height: 90vh;
+  width: 10.5vw;
+  height: 10vh;
   opacity: 0.9;
+  margin-top: 3px;
 }
 
 .starWarsName{
-  font-size: 1.6rem;
+  font-size: 0.6rem;
   color: white;
   font-weight: bold;
 }

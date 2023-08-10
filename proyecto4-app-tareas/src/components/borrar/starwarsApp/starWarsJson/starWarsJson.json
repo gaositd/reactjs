@@ -1,0 +1,38 @@
+[
+  {
+    "id": "luke-skywalker",
+    "imagePath": "https://www.shutterstock.com/es/image-photo/bangkok-thailand-november-42018-famous-anakin-1222346521"
+  },
+  {
+    "id": "c-3pO",
+    "imagePath": "https://www.shutterstock.com/es/image-photo/bangkok-january-27-c3po-model-on-1296835435"
+  },
+  {
+    "id": "r2-d2",
+    "imagePath": "https://www.shutterstock.com/es/image-photo/san-benedetto-del-tronto-italy-december-278635226"
+  },
+  {
+    "id": "darth-vader",
+    "imagePath": "https://www.shutterstock.com/es/image-photo/san-benedetto-del-tronto-italy-december-278635226"
+  },
+  {
+    "id": "leia-organa",
+    "imagePath": "https://www.shutterstock.com/es/image-photo/carrie-fisher-princess-leia-organa-star-545028562"
+  },
+  {
+    "id": "beru-whitesun-lars",
+    "imagePath": "https://lumiere-a.akamaihd.net/v1/images/beru-lars-main_fa680a4c.png?region=342%2C0%2C938%2C527"
+  },
+  {
+    "id": "r5-d4",
+    "imagePath": "https://static.wikia.nocookie.net/esstarwars/images/c/cb/R5-D4_Sideshow.png/revision/latest?cb=20171215233114"
+  },
+  {
+    "id": "biggs-darklighter",
+    "imagePath": "https://elglado.files.wordpress.com/2015/05/biggs-darklighter.png"
+  },
+  {
+    "id": "Obi-wan-kenobi",
+    "imagePath": "https://www.shutterstock.com/es/image-photo/april-8-2021-scene-star-wars-1952225167"
+  }
+]
