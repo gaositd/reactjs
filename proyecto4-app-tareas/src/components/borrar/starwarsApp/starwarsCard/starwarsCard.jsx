@@ -1,16 +1,26 @@
 import './starwarsCard.css';
 
 export const StarwarsCard = (props) => {
+  const { character, starWarsJson, starWarLogo } = props;
   const getImageUrl = (name) =>{
-    const arrName = name.split(' ');
-
-    // pasar de mayuscuylas a minusculas las primeras letas del nombre 
-    for(let i = 0; i < arrName.length; i++) {
-      arrName[i] = arrName[i][0].toUpperCase() + arrName[i].subString(1);
-    }
+    let imageUrl = "";
+    //const arrName = name.split(' ');
+    // pasar de mayúsculas a minúsculas las primeras letas del nombre 
+    //for(let i = 0; i < arrName.length; i++) {
+      //arrName[i] = arrName[i][0].toLowerCase() + arrName[i].subString(1);
+    //}
 
     name = name.replace(' ','-');
-    return 'a';
+
+    imageUrl = starWarsJson.find(igmPath =>{
+      return name === igmPath.id;
+    });
+
+    if(imageUrl) {
+      return imageUrl.imagePath;
+    }else {
+      return starWarLogo;
+    }
   }
 
   return (
@@ -18,7 +28,7 @@ export const StarwarsCard = (props) => {
       <figure className='starw'>
         <img 
           className='imageCard' 
-          // src={getImageUrl(props.character.name)}
+          src={getImageUrl(props.character.name)}
         />
         <figcaption className='starWarsName'>Name: {props.character.name}</figcaption>
       </figure>

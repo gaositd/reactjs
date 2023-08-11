@@ -1,38 +1,43 @@
 [
   {
-    "id": "luke-skywalker",
+    "id": "Luke-Skywalker",
     "imagePath": "https://www.shutterstock.com/es/image-photo/bangkok-thailand-november-42018-famous-anakin-1222346521"
   },
   {
-    "id": "c-3pO",
+    "id": "C-3PO",
     "imagePath": "https://www.shutterstock.com/es/image-photo/bangkok-january-27-c3po-model-on-1296835435"
   },
   {
-    "id": "r2-d2",
+    "id": "R2-D2",
     "imagePath": "https://www.shutterstock.com/es/image-photo/san-benedetto-del-tronto-italy-december-278635226"
   },
   {
-    "id": "darth-vader",
+    "id": "Darth-Vader",
     "imagePath": "https://www.shutterstock.com/es/image-photo/san-benedetto-del-tronto-italy-december-278635226"
   },
   {
-    "id": "leia-organa",
+    "id": "Leia-Organa",
     "imagePath": "https://www.shutterstock.com/es/image-photo/carrie-fisher-princess-leia-organa-star-545028562"
   },
   {
-    "id": "beru-whitesun-lars",
+    "id": "Beru-Whitesun-Lars",
     "imagePath": "https://lumiere-a.akamaihd.net/v1/images/beru-lars-main_fa680a4c.png?region=342%2C0%2C938%2C527"
   },
   {
-    "id": "r5-d4",
+    "id": "R5-D4",
     "imagePath": "https://static.wikia.nocookie.net/esstarwars/images/c/cb/R5-D4_Sideshow.png/revision/latest?cb=20171215233114"
   },
   {
-    "id": "biggs-darklighter",
+    "id": "Biggs-Darklighter",
     "imagePath": "https://elglado.files.wordpress.com/2015/05/biggs-darklighter.png"
   },
   {
-    "id": "Obi-wan-kenobi",
+    "id": "Obi-Wan-Kenobi",
     "imagePath": "https://www.shutterstock.com/es/image-photo/april-8-2021-scene-star-wars-1952225167"
+  },
+  {
+    "id":"Owen-Lars",
+    "imagePath":"https://static.wikia.nocookie.net/esstarwars/images/e/eb/OwenCardTrader.png/revision/latest/scale-to-width-down/1000?cb=20180105223041"
   }
+
 ]
