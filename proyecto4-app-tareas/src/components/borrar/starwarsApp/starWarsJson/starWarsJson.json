@@ -1,31 +1,31 @@
 [
   {
     "id": "Luke-Skywalker",
-    "imagePath": "https://www.shutterstock.com/es/image-photo/bangkok-thailand-november-42018-famous-anakin-1222346521"
+    "imagePath": "https://upload.wikimedia.org/wikipedia/en/b/b1/Luke_Skywalker_in_Return_of_the_Jedi_and_The_Last_Jedi.jpg"
   },
   {
     "id": "C-3PO",
-    "imagePath": "https://www.shutterstock.com/es/image-photo/bangkok-january-27-c3po-model-on-1296835435"
+    "imagePath": "https://swgoh.wiki/images/thumb/c/ca/Unit-Character-C-3PO.png/340px-Unit-Character-C-3PO.png"
   },
   {
     "id": "R2-D2",
-    "imagePath": "https://www.shutterstock.com/es/image-photo/san-benedetto-del-tronto-italy-december-278635226"
+    "imagePath": "https://miro.medium.com/v2/resize:fit:720/format:webp/0*i4TCwFsz8V77z1i0.jpg"
   },
   {
     "id": "Darth-Vader",
-    "imagePath": "https://www.shutterstock.com/es/image-photo/san-benedetto-del-tronto-italy-december-278635226"
+    "imagePath": "https://w7.pngwing.com/pngs/1016/395/png-transparent-star-wars-darth-vader-anakin-skywalker-luke-skywalker-star-wars-darth-vader-fictional-character-film-return-of-the-jedi.png"
   },
   {
     "id": "Leia-Organa",
-    "imagePath": "https://www.shutterstock.com/es/image-photo/carrie-fisher-princess-leia-organa-star-545028562"
+    "imagePath": "https://pm1.aminoapps.com/6444/85b04c0d59268057ea9b5da514606829cb0f61bf_hq.jpg"
   },
   {
-    "id": "Beru-Whitesun-Lars",
-    "imagePath": "https://lumiere-a.akamaihd.net/v1/images/beru-lars-main_fa680a4c.png?region=342%2C0%2C938%2C527"
+    "id": "Beru-Whitesun-lars",
+    "imagePath": "https://tatooinetimes.com/wp-content/uploads/2022/06/obi-wan-kenobi-part-vi-02.jpg"
   },
   {
     "id": "R5-D4",
-    "imagePath": "https://static.wikia.nocookie.net/esstarwars/images/c/cb/R5-D4_Sideshow.png/revision/latest?cb=20171215233114"
+    "imagePath": "https://media.gamestop.com/i/gamestop/20005110_ALT08?$pdp2x$"
   },
   {
     "id": "Biggs-Darklighter",
@@ -33,11 +33,11 @@
   },
   {
     "id": "Obi-Wan-Kenobi",
-    "imagePath": "https://www.shutterstock.com/es/image-photo/april-8-2021-scene-star-wars-1952225167"
+    "imagePath": "https://top-mmo.fr/wp-content/uploads/2022/06/Tgb5qXmRfDH7dzXPtwS2oB-1200-80.jpg"
   },
   {
     "id":"Owen-Lars",
-    "imagePath":"https://static.wikia.nocookie.net/esstarwars/images/e/eb/OwenCardTrader.png/revision/latest/scale-to-width-down/1000?cb=20180105223041"
+    "imagePath":"https://www.edna.cz/runtime/userfiles/series/star-wars/Owen-6500b9cb29e72988236167c279e5453a.png"
   }
 
 ]

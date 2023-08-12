@@ -10,7 +10,8 @@ export const StarwarsCard = (props) => {
       //arrName[i] = arrName[i][0].toLowerCase() + arrName[i].subString(1);
     //}
 
-    name = name.replace(' ','-');
+    name = name.replace(/\s/g, '-');
+    //nombreImage.replace(/\s/g, '') 
 
     imageUrl = starWarsJson.find(igmPath =>{
       return name === igmPath.id;
@@ -30,7 +31,7 @@ export const StarwarsCard = (props) => {
           className='imageCard' 
           src={getImageUrl(props.character.name)}
         />
-        <figcaption className='starWarsName'>Name: {props.character.name}</figcaption>
+        <figcaption className='starWarsName'>{props.character.name}</figcaption>
       </figure>
       {/* <div>Name: {props.character.name}</div>
       <div>Birth year: {props.character.birth_year}</div>
