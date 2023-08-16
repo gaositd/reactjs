@@ -28,16 +28,17 @@ export const StarwarsCard = (props) => {
           <img 
             className='imageCard' 
             src={getImageUrl(props.character.name)}
-            onClick={setModalOpen(!modalOpen)}
+            onClick={() => setModalOpen(!modalOpen)}
           />
           <figcaption className='starWarsName'>{props.character.name}</figcaption>
         </figure>
       </article>
-      {
-        modalOpen
-        ? <StarWarsModal />
-        :null        
-      }
+      <StarWarsModal 
+        modalOpen={modalOpen}
+        setModalOpen={setModalOpen}
+        character={character}
+        urlImage={getImageUrl(props.character.name)}
+      />
     </>
   )
 }
